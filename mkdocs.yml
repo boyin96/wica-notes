@@ -1,12 +1,12 @@
 # Project information
 site_name: WiCa Notes
-site_url: https://boyin.pro/wica-notes.github.io/
+site_url: https://boyin.pro/wica-notes/
 site_author: Bo Yin
 site_description: This is technical notes site for me to record my learning thoughts.
 
 # Repository
-repo_name: boyin96/wica-notes.github.io
-repo_url: https://github.com/boyin96/wica-notes.github.io/
+repo_name: boyin96/wica-notes
+repo_url: https://github.com/boyin96/wica-notes/
 
 # Copyright
 copyright: Copyright &copy; 2024 ~ now | Bo Yin
