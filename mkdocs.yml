@@ -16,6 +16,8 @@ nav:
   - Home: index.md
   - About: about.md
   - Technial: x.md
+  - Blog:
+    - blog/index.md
 
 # Theme
 theme:
@@ -67,11 +69,14 @@ theme:
     text: Roboto
     code: Roboto Mono
 
-  language: en
+  language: zh
 
+# Plugins
 plugins:
-  - search
+  - search:
+      separator: '[\s\u200b\-]'
   - tags
+  - blog
 
 extra:
   generator: false  # 删除页脚显示“使用 MkDocs 材料制造”
@@ -83,3 +88,13 @@ extra:
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
+
+# Latex
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
