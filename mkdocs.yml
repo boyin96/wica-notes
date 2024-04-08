@@ -18,6 +18,8 @@ nav:
     - x: x.md
   - Technology:
     - Material for MkDocs: technology/mkdocs.md
+  - Programming: 
+    - Markdown Basic Syntax: programming/markdown.md
   - Blog:
     - blog/index.md
 

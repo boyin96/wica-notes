@@ -11,7 +11,7 @@ author: Bo Yin
 
 > 本网站是基于 Material for MkDocs 二次创作，主要用于记录与分享个人学习心得。
 
-MkDocs 是一个基于 Markdown 的静态站点生成器，它允许你使用简单的 Markdown 格式编写文档，并通过一个简单的配置文件快速构建美观的静态网站。 Material for MkDocs 是 MkDocs 的一个主题扩展，它基于 Google Material Design 设计原则，提供了现代化的界面风格和丰富的功能，使得生成的文档更加美观和易于阅读。
+MkDocs 是一个基于 Markdown 的静态站点生成器，它允许你使用简单的 Markdown 格式编写文档，并通过一个简单的配置文件快速构建美观的静态网站。Material for MkDocs 是 MkDocs 的一个主题扩展，它基于 Google Material Design 设计原则，提供了现代化的界面风格和丰富的功能，使得生成的文档更加美观和易于阅读。
 
 MkDocs 的优点：
 
