@@ -17,7 +17,9 @@ nav:
   - WiCa:
     - 信号: wica/x.md
     - 下面: wica/y.md
-  - Technology: technology/x.md
+  - Technology:
+    - Material for MkDocs: technology/x.md
+    - Material for MkDocs: technology/x.md
   - Blog:
     - blog/index.md
 
@@ -55,14 +57,14 @@ theme:
     - navigation.tabs
     - navigation.prune
     - navigation.footer
-    - navigation.tabs.sticky  # 启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
     - navigation.sections # 启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
     - navigation.expand # 打开Tab时左侧目录全部展开
     - content.code.copy
     - navigation.indexes # 启用节索引页后，可以将文档直接附加到节
     - search.share # 搜索分享按钮
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
-    - search.highlight # 搜索出的文章关键词加入高亮
+    # - search.highlight # 搜索出的文章关键词加入高亮
+    # - navigation.tabs.sticky  # 启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
 
   icon: 
     repo: fontawesome/brands/github
@@ -77,7 +79,8 @@ theme:
 plugins:
   - search:
       separator: '[\s\u200b\-]'
-  - tags
+  - tags:
+      tags_file: tags.md
   - blog
 
 extra:
