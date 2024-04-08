@@ -1,0 +1,1281 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="This is technical notes site for me to record my learning thoughts.">
+      
+      
+        <meta name="author" content="Bo Yin">
+      
+      
+        <link rel="canonical" href="https://boyin.pro/wica-notes/technology/mkdocs/">
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../../blog/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Material for MkDocs - WiCa Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-YPXW9DM0JD"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-YPXW9DM0JD",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-YPXW9DM0JD",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="WiCa Notes" class="md-header__button md-logo" aria-label="WiCa Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WiCa Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Material for MkDocs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/boyin96/wica-notes/" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    boyin96/wica-notes
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../x.md" class="md-tabs__link">
+          
+  
+    
+  
+  WiCa
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+    
+  
+  Technology
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../blog/" class="md-tabs__link">
+          
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="WiCa Notes" class="md-nav__button md-logo" aria-label="WiCa Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    WiCa Notes
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/boyin96/wica-notes/" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    boyin96/wica-notes
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../x.md" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    WiCa
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Technology
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Technology
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Material for MkDocs
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Material for MkDocs
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      介绍
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      创建新项目
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置文件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      网页生成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      部署网站
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      总结
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      参考文章
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../blog/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+<nav class="md-tags" >
+  
+    
+    
+    
+      <a href="../../tags/#web" class="md-tag">Web</a>
+    
+  
+</nav>
+
+
+  
+    <a href="https://github.com/boyin96/wica-notes/edit/master/docs/technology/mkdocs.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+
+
+  <h1>Material for MkDocs</h1>
+
+<p>本文简单介绍如何使用 <a href="https://www.mkdocs.org/">MkDocs</a> 以及 <a href="https://pages.github.com/">GitHub Pages</a> 构建个人网站，并搭配 <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a> 主题。</p>
+<h2 id="_1">介绍<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>本网站是基于 Material for MkDocs 二次创作，主要用于记录与分享个人学习心得。</p>
+</blockquote>
+<p>MkDocs 是一个基于 Markdown 的静态站点生成器，它允许你使用简单的 Markdown 格式编写文档，并通过一个简单的配置文件快速构建美观的静态网站。 Material for MkDocs 是 MkDocs 的一个主题扩展，它基于 Google Material Design 设计原则，提供了现代化的界面风格和丰富的功能，使得生成的文档更加美观和易于阅读。</p>
+<p>MkDocs 的优点：</p>
+<ul>
+<li><strong>简单易用</strong>：MkDocs 使用简单的 Markdown 语法编写文档，并提供一个简单的配置文件，使得构建静态网站变得非常容易。</li>
+<li><strong>灵活性</strong>：MkDocs 支持丰富的插件和主题，可以根据需求定制和扩展。</li>
+<li><strong>速度快</strong>：MkDocs 生成的静态网站速度非常快，可以快速呈现大量文档内容。</li>
+</ul>
+<p>Material for MkDocs 的优点：</p>
+<ul>
+<li><strong>现代化界面</strong>：Material for MkDocs 基于 Google Material Design，提供了现代化的界面风格和交互体验。</li>
+<li><strong>响应式布局</strong>：Material for MkDocs 支持响应式布局，在各种设备上都能够良好地展示文档内容。</li>
+<li><strong>丰富功能</strong>：Material for MkDocs 提供了丰富的功能和组件，如搜索功能、侧边栏、导航栏等，使得文档更加易于浏览和导航。</li>
+</ul>
+<h2 id="_2">安装<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>安装 MkDocs 和 Material for MkDocs 主题</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">pip</span> <span class="n">install</span> <span class="n">mkdocs</span> <span class="n">mkdocs</span><span class="o">-</span><span class="n">material</span>
+</code></pre></div></td></tr></table></div>
+<p>检查是否安装成功</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">mkdocs</span> <span class="o">--</span><span class="n">version</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_3">创建新项目<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>新建一个文件夹，在该路径下打开终端，创建一个新的 MkDocs 项目</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>mkdocs<span class="w"> </span>new<span class="w"> </span>my-project<span class="w"> </span><span class="o">(</span>your<span class="w"> </span>project<span class="w"> </span>name<span class="o">)</span>
+</code></pre></div></td></tr></table></div>
+<p>当前路径下自动生成以下结构文件</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>my-project
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>├─<span class="w"> </span>docs/
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>│<span class="w">  </span>└─<span class="w"> </span>index.md<span class="w"> </span><span class="c1"># 主页    </span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>└─<span class="w"> </span>mkdocs.yml<span class="w"> </span><span class="c1"># 配置文件 </span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_4">配置文件<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>网页基本需求均可在 mkdocs.yml 配置文件中进行设置，相关设置可在 <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a> 官网查询，以下是一个简单的配置</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">  1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">  2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">  3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">  4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">  5</a></span>
+<span class="normal"><a href="#__codelineno-4-6">  6</a></span>
+<span class="normal"><a href="#__codelineno-4-7">  7</a></span>
+<span class="normal"><a href="#__codelineno-4-8">  8</a></span>
+<span class="normal"><a href="#__codelineno-4-9">  9</a></span>
+<span class="normal"><a href="#__codelineno-4-10"> 10</a></span>
+<span class="normal"><a href="#__codelineno-4-11"> 11</a></span>
+<span class="normal"><a href="#__codelineno-4-12"> 12</a></span>
+<span class="normal"><a href="#__codelineno-4-13"> 13</a></span>
+<span class="normal"><a href="#__codelineno-4-14"> 14</a></span>
+<span class="normal"><a href="#__codelineno-4-15"> 15</a></span>
+<span class="normal"><a href="#__codelineno-4-16"> 16</a></span>
+<span class="normal"><a href="#__codelineno-4-17"> 17</a></span>
+<span class="normal"><a href="#__codelineno-4-18"> 18</a></span>
+<span class="normal"><a href="#__codelineno-4-19"> 19</a></span>
+<span class="normal"><a href="#__codelineno-4-20"> 20</a></span>
+<span class="normal"><a href="#__codelineno-4-21"> 21</a></span>
+<span class="normal"><a href="#__codelineno-4-22"> 22</a></span>
+<span class="normal"><a href="#__codelineno-4-23"> 23</a></span>
+<span class="normal"><a href="#__codelineno-4-24"> 24</a></span>
+<span class="normal"><a href="#__codelineno-4-25"> 25</a></span>
+<span class="normal"><a href="#__codelineno-4-26"> 26</a></span>
+<span class="normal"><a href="#__codelineno-4-27"> 27</a></span>
+<span class="normal"><a href="#__codelineno-4-28"> 28</a></span>
+<span class="normal"><a href="#__codelineno-4-29"> 29</a></span>
+<span class="normal"><a href="#__codelineno-4-30"> 30</a></span>
+<span class="normal"><a href="#__codelineno-4-31"> 31</a></span>
+<span class="normal"><a href="#__codelineno-4-32"> 32</a></span>
+<span class="normal"><a href="#__codelineno-4-33"> 33</a></span>
+<span class="normal"><a href="#__codelineno-4-34"> 34</a></span>
+<span class="normal"><a href="#__codelineno-4-35"> 35</a></span>
+<span class="normal"><a href="#__codelineno-4-36"> 36</a></span>
+<span class="normal"><a href="#__codelineno-4-37"> 37</a></span>
+<span class="normal"><a href="#__codelineno-4-38"> 38</a></span>
+<span class="normal"><a href="#__codelineno-4-39"> 39</a></span>
+<span class="normal"><a href="#__codelineno-4-40"> 40</a></span>
+<span class="normal"><a href="#__codelineno-4-41"> 41</a></span>
+<span class="normal"><a href="#__codelineno-4-42"> 42</a></span>
+<span class="normal"><a href="#__codelineno-4-43"> 43</a></span>
+<span class="normal"><a href="#__codelineno-4-44"> 44</a></span>
+<span class="normal"><a href="#__codelineno-4-45"> 45</a></span>
+<span class="normal"><a href="#__codelineno-4-46"> 46</a></span>
+<span class="normal"><a href="#__codelineno-4-47"> 47</a></span>
+<span class="normal"><a href="#__codelineno-4-48"> 48</a></span>
+<span class="normal"><a href="#__codelineno-4-49"> 49</a></span>
+<span class="normal"><a href="#__codelineno-4-50"> 50</a></span>
+<span class="normal"><a href="#__codelineno-4-51"> 51</a></span>
+<span class="normal"><a href="#__codelineno-4-52"> 52</a></span>
+<span class="normal"><a href="#__codelineno-4-53"> 53</a></span>
+<span class="normal"><a href="#__codelineno-4-54"> 54</a></span>
+<span class="normal"><a href="#__codelineno-4-55"> 55</a></span>
+<span class="normal"><a href="#__codelineno-4-56"> 56</a></span>
+<span class="normal"><a href="#__codelineno-4-57"> 57</a></span>
+<span class="normal"><a href="#__codelineno-4-58"> 58</a></span>
+<span class="normal"><a href="#__codelineno-4-59"> 59</a></span>
+<span class="normal"><a href="#__codelineno-4-60"> 60</a></span>
+<span class="normal"><a href="#__codelineno-4-61"> 61</a></span>
+<span class="normal"><a href="#__codelineno-4-62"> 62</a></span>
+<span class="normal"><a href="#__codelineno-4-63"> 63</a></span>
+<span class="normal"><a href="#__codelineno-4-64"> 64</a></span>
+<span class="normal"><a href="#__codelineno-4-65"> 65</a></span>
+<span class="normal"><a href="#__codelineno-4-66"> 66</a></span>
+<span class="normal"><a href="#__codelineno-4-67"> 67</a></span>
+<span class="normal"><a href="#__codelineno-4-68"> 68</a></span>
+<span class="normal"><a href="#__codelineno-4-69"> 69</a></span>
+<span class="normal"><a href="#__codelineno-4-70"> 70</a></span>
+<span class="normal"><a href="#__codelineno-4-71"> 71</a></span>
+<span class="normal"><a href="#__codelineno-4-72"> 72</a></span>
+<span class="normal"><a href="#__codelineno-4-73"> 73</a></span>
+<span class="normal"><a href="#__codelineno-4-74"> 74</a></span>
+<span class="normal"><a href="#__codelineno-4-75"> 75</a></span>
+<span class="normal"><a href="#__codelineno-4-76"> 76</a></span>
+<span class="normal"><a href="#__codelineno-4-77"> 77</a></span>
+<span class="normal"><a href="#__codelineno-4-78"> 78</a></span>
+<span class="normal"><a href="#__codelineno-4-79"> 79</a></span>
+<span class="normal"><a href="#__codelineno-4-80"> 80</a></span>
+<span class="normal"><a href="#__codelineno-4-81"> 81</a></span>
+<span class="normal"><a href="#__codelineno-4-82"> 82</a></span>
+<span class="normal"><a href="#__codelineno-4-83"> 83</a></span>
+<span class="normal"><a href="#__codelineno-4-84"> 84</a></span>
+<span class="normal"><a href="#__codelineno-4-85"> 85</a></span>
+<span class="normal"><a href="#__codelineno-4-86"> 86</a></span>
+<span class="normal"><a href="#__codelineno-4-87"> 87</a></span>
+<span class="normal"><a href="#__codelineno-4-88"> 88</a></span>
+<span class="normal"><a href="#__codelineno-4-89"> 89</a></span>
+<span class="normal"><a href="#__codelineno-4-90"> 90</a></span>
+<span class="normal"><a href="#__codelineno-4-91"> 91</a></span>
+<span class="normal"><a href="#__codelineno-4-92"> 92</a></span>
+<span class="normal"><a href="#__codelineno-4-93"> 93</a></span>
+<span class="normal"><a href="#__codelineno-4-94"> 94</a></span>
+<span class="normal"><a href="#__codelineno-4-95"> 95</a></span>
+<span class="normal"><a href="#__codelineno-4-96"> 96</a></span>
+<span class="normal"><a href="#__codelineno-4-97"> 97</a></span>
+<span class="normal"><a href="#__codelineno-4-98"> 98</a></span>
+<span class="normal"><a href="#__codelineno-4-99"> 99</a></span>
+<span class="normal"><a href="#__codelineno-4-100">100</a></span>
+<span class="normal"><a href="#__codelineno-4-101">101</a></span>
+<span class="normal"><a href="#__codelineno-4-102">102</a></span>
+<span class="normal"><a href="#__codelineno-4-103">103</a></span>
+<span class="normal"><a href="#__codelineno-4-104">104</a></span>
+<span class="normal"><a href="#__codelineno-4-105">105</a></span>
+<span class="normal"><a href="#__codelineno-4-106">106</a></span>
+<span class="normal"><a href="#__codelineno-4-107">107</a></span>
+<span class="normal"><a href="#__codelineno-4-108">108</a></span>
+<span class="normal"><a href="#__codelineno-4-109">109</a></span>
+<span class="normal"><a href="#__codelineno-4-110">110</a></span>
+<span class="normal"><a href="#__codelineno-4-111">111</a></span>
+<span class="normal"><a href="#__codelineno-4-112">112</a></span>
+<span class="normal"><a href="#__codelineno-4-113">113</a></span>
+<span class="normal"><a href="#__codelineno-4-114">114</a></span>
+<span class="normal"><a href="#__codelineno-4-115">115</a></span>
+<span class="normal"><a href="#__codelineno-4-116">116</a></span>
+<span class="normal"><a href="#__codelineno-4-117">117</a></span>
+<span class="normal"><a href="#__codelineno-4-118">118</a></span>
+<span class="normal"><a href="#__codelineno-4-119">119</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="c1"># Project information</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WiCa Notes</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="nt">site_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://boyin.pro/wica-notes/</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="nt">site_author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bo Yin</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="nt">site_description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This is technical notes site for me to record my learning thoughts.</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="c1"># Repository</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="nt">repo_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">boyin96/wica-notes</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="nt">repo_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/boyin96/wica-notes/</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="c1"># Copyright</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="nt">copyright</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Copyright &amp;copy; 2024 ~ now | Bo Yin</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a>
+<a id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="c1"># Navigation</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="nt">nav</span><span class="p">:</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Home</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">WiCa</span><span class="p">:</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Technology</span><span class="p">:</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Material for MkDocs</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">technology/mkdocs.md</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Blog</span><span class="p">:</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog/index.md</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22"></a>
+<a id="__codelineno-4-23" name="__codelineno-4-23"></a><span class="c1"># Theme</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24"></a><span class="nt">theme</span><span class="p">:</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26"></a><span class="w">  </span><span class="nt">palette</span><span class="p">:</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27"></a><span class="w">    </span><span class="c1"># Palette toggle for light mode</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">media</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;(prefers-color-scheme:</span><span class="nv"> </span><span class="s">light)&quot;</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29"></a><span class="w">      </span><span class="nt">scheme</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30"></a><span class="w">      </span><span class="nt">primary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deep purple</span>
+<a id="__codelineno-4-31" name="__codelineno-4-31"></a><span class="w">      </span><span class="nt">accent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deep purple</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32"></a><span class="w">      </span><span class="nt">toggle</span><span class="p">:</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33"></a><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material/brightness-7</span><span class="w"> </span>
+<a id="__codelineno-4-34" name="__codelineno-4-34"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Switch to dark mode</span>
+<a id="__codelineno-4-35" name="__codelineno-4-35"></a>
+<a id="__codelineno-4-36" name="__codelineno-4-36"></a><span class="w">    </span><span class="c1"># Palette toggle for dark mode</span>
+<a id="__codelineno-4-37" name="__codelineno-4-37"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">media</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;(prefers-color-scheme:</span><span class="nv"> </span><span class="s">dark)&quot;</span>
+<a id="__codelineno-4-38" name="__codelineno-4-38"></a><span class="w">      </span><span class="nt">scheme</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">slate</span>
+<a id="__codelineno-4-39" name="__codelineno-4-39"></a><span class="w">      </span><span class="nt">primary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black</span>
+<a id="__codelineno-4-40" name="__codelineno-4-40"></a><span class="w">      </span><span class="nt">accent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">indigo</span>
+<a id="__codelineno-4-41" name="__codelineno-4-41"></a><span class="w">      </span><span class="nt">toggle</span><span class="p">:</span>
+<a id="__codelineno-4-42" name="__codelineno-4-42"></a><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material/brightness-4</span>
+<a id="__codelineno-4-43" name="__codelineno-4-43"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Switch to light mode</span>
+<a id="__codelineno-4-44" name="__codelineno-4-44"></a>
+<a id="__codelineno-4-45" name="__codelineno-4-45"></a><span class="w">  </span><span class="nt">features</span><span class="p">:</span>
+<a id="__codelineno-4-46" name="__codelineno-4-46"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">header.autohide</span><span class="w">  </span><span class="c1"># 自动隐藏</span>
+<a id="__codelineno-4-47" name="__codelineno-4-47"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.instant</span><span class="w"> </span><span class="c1"># 自动隐藏</span>
+<a id="__codelineno-4-48" name="__codelineno-4-48"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.tracking</span><span class="w"> </span><span class="c1"># 地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点</span>
+<a id="__codelineno-4-49" name="__codelineno-4-49"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.annotate</span>
+<a id="__codelineno-4-50" name="__codelineno-4-50"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc.integrate</span>
+<a id="__codelineno-4-51" name="__codelineno-4-51"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc.follow</span>
+<a id="__codelineno-4-52" name="__codelineno-4-52"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.path</span>
+<a id="__codelineno-4-53" name="__codelineno-4-53"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.top</span><span class="w"> </span><span class="c1"># 返回顶部的按钮 在上滑时出现</span>
+<a id="__codelineno-4-54" name="__codelineno-4-54"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.tabs</span>
+<a id="__codelineno-4-55" name="__codelineno-4-55"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.prune</span>
+<a id="__codelineno-4-56" name="__codelineno-4-56"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.footer</span>
+<a id="__codelineno-4-57" name="__codelineno-4-57"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.sections</span><span class="w"> </span><span class="c1"># 启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样</span>
+<a id="__codelineno-4-58" name="__codelineno-4-58"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.expand</span><span class="w"> </span><span class="c1"># 打开Tab时左侧目录全部展开</span>
+<a id="__codelineno-4-59" name="__codelineno-4-59"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">content.code.copy</span>
+<a id="__codelineno-4-60" name="__codelineno-4-60"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation.indexes</span><span class="w"> </span><span class="c1"># 启用节索引页后，可以将文档直接附加到节</span>
+<a id="__codelineno-4-61" name="__codelineno-4-61"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search.share</span><span class="w"> </span><span class="c1"># 搜索分享按钮</span>
+<a id="__codelineno-4-62" name="__codelineno-4-62"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search.suggest</span><span class="w"> </span><span class="c1"># 搜索输入一些字母时推荐补全整个单词</span>
+<a id="__codelineno-4-63" name="__codelineno-4-63"></a><span class="w">    </span><span class="c1"># - search.highlight # 搜索出的文章关键词加入高亮</span>
+<a id="__codelineno-4-64" name="__codelineno-4-64"></a><span class="w">    </span><span class="c1"># - navigation.tabs.sticky # 启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见</span>
+<a id="__codelineno-4-65" name="__codelineno-4-65"></a>
+<a id="__codelineno-4-66" name="__codelineno-4-66"></a><span class="w">  </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span>
+<a id="__codelineno-4-67" name="__codelineno-4-67"></a><span class="w">    </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fontawesome/brands/github</span>
+<a id="__codelineno-4-68" name="__codelineno-4-68"></a>
+<a id="__codelineno-4-69" name="__codelineno-4-69"></a><span class="w">  </span><span class="nt">font</span><span class="p">:</span>
+<a id="__codelineno-4-70" name="__codelineno-4-70"></a><span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Roboto</span>
+<a id="__codelineno-4-71" name="__codelineno-4-71"></a><span class="w">    </span><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Roboto Mono</span>
+<a id="__codelineno-4-72" name="__codelineno-4-72"></a>
+<a id="__codelineno-4-73" name="__codelineno-4-73"></a><span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">zh</span>
+<a id="__codelineno-4-74" name="__codelineno-4-74"></a>
+<a id="__codelineno-4-75" name="__codelineno-4-75"></a><span class="c1"># Plugins</span>
+<a id="__codelineno-4-76" name="__codelineno-4-76"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-4-77" name="__codelineno-4-77"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">search</span><span class="p">:</span>
+<a id="__codelineno-4-78" name="__codelineno-4-78"></a><span class="w">      </span><span class="nt">separator</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;[\s\u200b\-]&#39;</span>
+<a id="__codelineno-4-79" name="__codelineno-4-79"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">tags</span><span class="p">:</span>
+<a id="__codelineno-4-80" name="__codelineno-4-80"></a><span class="w">      </span><span class="nt">tags_file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tags.md</span>
+<a id="__codelineno-4-81" name="__codelineno-4-81"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">blog</span>
+<a id="__codelineno-4-82" name="__codelineno-4-82"></a>
+<a id="__codelineno-4-83" name="__codelineno-4-83"></a><span class="nt">extra</span><span class="p">:</span>
+<a id="__codelineno-4-84" name="__codelineno-4-84"></a><span class="w">  </span><span class="nt">generator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"> </span><span class="c1"># 删除页脚显示“使用 MkDocs 材料制造”</span>
+<a id="__codelineno-4-85" name="__codelineno-4-85"></a>
+<a id="__codelineno-4-86" name="__codelineno-4-86"></a><span class="w">  </span><span class="nt">consent</span><span class="p">:</span>
+<a id="__codelineno-4-87" name="__codelineno-4-87"></a><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Cookie consent</span>
+<a id="__codelineno-4-88" name="__codelineno-4-88"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">&gt;-</span><span class="w"> </span>
+<a id="__codelineno-4-89" name="__codelineno-4-89"></a><span class="w">      </span><span class="no">We use cookies to recognize your repeated visits and preferences, as well</span>
+<a id="__codelineno-4-90" name="__codelineno-4-90"></a><span class="w">      </span><span class="no">as to measure the effectiveness of our documentation and whether users</span>
+<a id="__codelineno-4-91" name="__codelineno-4-91"></a><span class="w">      </span><span class="no">find what they&#39;re searching for. With your consent, you&#39;re helping us to</span>
+<a id="__codelineno-4-92" name="__codelineno-4-92"></a><span class="w">      </span><span class="no">make our documentation better.</span>
+<a id="__codelineno-4-93" name="__codelineno-4-93"></a>
+<a id="__codelineno-4-94" name="__codelineno-4-94"></a><span class="w">  </span><span class="nt">analytics</span><span class="p">:</span><span class="w"> </span>
+<a id="__codelineno-4-95" name="__codelineno-4-95"></a><span class="w">    </span><span class="nt">provider</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">google</span>
+<a id="__codelineno-4-96" name="__codelineno-4-96"></a><span class="w">    </span><span class="nt">property</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">G-YPXW9DM0JD</span>
+<a id="__codelineno-4-97" name="__codelineno-4-97"></a><span class="w">    </span><span class="nt">feedback</span><span class="p">:</span>
+<a id="__codelineno-4-98" name="__codelineno-4-98"></a><span class="w">      </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Was this page helpful?</span>
+<a id="__codelineno-4-99" name="__codelineno-4-99"></a><span class="w">      </span><span class="nt">ratings</span><span class="p">:</span>
+<a id="__codelineno-4-100" name="__codelineno-4-100"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material/emoticon-happy-outline</span>
+<a id="__codelineno-4-101" name="__codelineno-4-101"></a><span class="w">          </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This page was helpful</span>
+<a id="__codelineno-4-102" name="__codelineno-4-102"></a><span class="w">          </span><span class="nt">data</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<a id="__codelineno-4-103" name="__codelineno-4-103"></a><span class="w">          </span><span class="nt">note</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">&gt;-</span>
+<a id="__codelineno-4-104" name="__codelineno-4-104"></a><span class="w">            </span><span class="no">Thanks for your feedback!</span>
+<a id="__codelineno-4-105" name="__codelineno-4-105"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material/emoticon-sad-outline</span>
+<a id="__codelineno-4-106" name="__codelineno-4-106"></a><span class="w">          </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This page could be improved</span>
+<a id="__codelineno-4-107" name="__codelineno-4-107"></a><span class="w">          </span><span class="nt">data</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<a id="__codelineno-4-108" name="__codelineno-4-108"></a><span class="w">          </span><span class="nt">note</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">&gt;-</span><span class="w"> </span>
+<a id="__codelineno-4-109" name="__codelineno-4-109"></a><span class="w">            </span><span class="no">Thanks for your feedback!</span>
+<a id="__codelineno-4-110" name="__codelineno-4-110"></a>
+<a id="__codelineno-4-111" name="__codelineno-4-111"></a><span class="c1"># Latex</span>
+<a id="__codelineno-4-112" name="__codelineno-4-112"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a id="__codelineno-4-113" name="__codelineno-4-113"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.arithmatex</span><span class="p">:</span>
+<a id="__codelineno-4-114" name="__codelineno-4-114"></a><span class="w">      </span><span class="nt">generic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-4-115" name="__codelineno-4-115"></a>
+<a id="__codelineno-4-116" name="__codelineno-4-116"></a><span class="nt">extra_javascript</span><span class="p">:</span>
+<a id="__codelineno-4-117" name="__codelineno-4-117"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">javascripts/mathjax.js</span>
+<a id="__codelineno-4-118" name="__codelineno-4-118"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://polyfill.io/v3/polyfill.min.js?features=es6</span>
+<a id="__codelineno-4-119" name="__codelineno-4-119"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_5">网页生成<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>MkDocs 可以随时在本地进行网页生成和浏览，因此建议先在本地端调试好之后再上传到服务器。在 mkdocs.yml 同一路径下调用</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="l l-Scalar l-Scalar-Plain">mkdocs serve</span>
+</code></pre></div></td></tr></table></div>
+<p>在浏览器中输入地址 <a href="http://localhost:8000/">http://localhost:8000</a> 或者 <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000</a> 来预览网页效果。同样在 mkdocs.yml 同一路径下，使用以下命令生成网页文件夹</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="l l-Scalar l-Scalar-Plain">mkdocs build</span>
+</code></pre></div></td></tr></table></div>
+<p>成功后，将在项目文件夹下生成一个名为 site 的文件夹，其中包含了所有生成的网页。</p>
+<h2 id="_6">部署网站<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>关于如何部署网站到 GitHub Pages 上，<a href="https://squidfunk.github.io/mkdocs-material/publishing-your-site/">Material for MkDocs</a> 以及 <a href="https://www.mkdocs.org/user-guide/deploying-your-docs/">MkDocs</a> 提供了详尽的说明，以下提供两种方式将网站部署到 GitHub Pages 上。</p>
+<p><strong>1. 手动构建</strong></p>
+<p>首先将上面 site 文件夹下的所有文件拷贝到项目根目录下，当我们部署网页时，只需要将上述内容上传到 Repo 即可。具体而言，首先你需要在本地端使用 markdown 语法写好自己的网页，然后通过 mkdocs build 构建好网页资源，然后将这些资源上传到你的 GitHub Repo 即可。</p>
+<p>该方法比较麻烦，因为每次都要自己现在本地构建好静态文件，拷贝到相关目录下，再 push 到仓库。</p>
+<p><strong>2. 自动化构建</strong></p>
+<p>采用 GitHub Action 可以自动帮你完成上述 build 的过程，你只需要关注你的 markdown 网页内容即可。具体而言，首先添加在 GitHub 项目库根目录添加文件 .github/workflows/ci.yml</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-7-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-7-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-7-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-7-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-7-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-7-10">10</a></span>
+<span class="normal"><a href="#__codelineno-7-11">11</a></span>
+<span class="normal"><a href="#__codelineno-7-12">12</a></span>
+<span class="normal"><a href="#__codelineno-7-13">13</a></span>
+<span class="normal"><a href="#__codelineno-7-14">14</a></span>
+<span class="normal"><a href="#__codelineno-7-15">15</a></span>
+<span class="normal"><a href="#__codelineno-7-16">16</a></span>
+<span class="normal"><a href="#__codelineno-7-17">17</a></span>
+<span class="normal"><a href="#__codelineno-7-18">18</a></span>
+<span class="normal"><a href="#__codelineno-7-19">19</a></span>
+<span class="normal"><a href="#__codelineno-7-20">20</a></span>
+<span class="normal"><a href="#__codelineno-7-21">21</a></span>
+<span class="normal"><a href="#__codelineno-7-22">22</a></span>
+<span class="normal"><a href="#__codelineno-7-23">23</a></span>
+<span class="normal"><a href="#__codelineno-7-24">24</a></span>
+<span class="normal"><a href="#__codelineno-7-25">25</a></span>
+<span class="normal"><a href="#__codelineno-7-26">26</a></span>
+<span class="normal"><a href="#__codelineno-7-27">27</a></span>
+<span class="normal"><a href="#__codelineno-7-28">28</a></span>
+<span class="normal"><a href="#__codelineno-7-29">29</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci</span><span class="w"> </span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="nt">on</span><span class="p">:</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"> </span>
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="nt">permissions</span><span class="p">:</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="w">  </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">write</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="nt">jobs</span><span class="p">:</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10"></a><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Configure Git Credentials</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15"></a><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16"></a><span class="w">          </span><span class="no">git config user.name github-actions[bot]</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17"></a><span class="w">          </span><span class="no">git config user.email 41898282+github-actions[bot]@users.noreply.github.com</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v5</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20"></a><span class="w">          </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.x</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;cache_id=$(date --utc &#39;+%V&#39;)&quot; &gt;&gt; $GITHUB_ENV</span><span class="w"> </span>
+<a id="__codelineno-7-22" name="__codelineno-7-22"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/cache@v4</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24"></a><span class="w">          </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs-material-${{ env.cache_id }}</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25"></a><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.cache</span>
+<a id="__codelineno-7-26" name="__codelineno-7-26"></a><span class="w">          </span><span class="nt">restore-keys</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27"></a><span class="w">            </span><span class="no">mkdocs-material-</span>
+<a id="__codelineno-7-28" name="__codelineno-7-28"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install mkdocs-material</span><span class="w"> </span>
+<a id="__codelineno-7-29" name="__codelineno-7-29"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs gh-deploy --force</span>
+</code></pre></div></td></tr></table></div>
+<p>添加完成后，转到 GitHub Pages 页面将 Branch 源选择 gh-pages 保存即可。</p>
+<h2 id="_7">总结<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>总而言之，MkDocs 和 Material for MkDocs 提供了一种简单而强大的方式来创建和管理文档网站。使用 Markdown 语法编写文档，通过简单的命令即可生成美观的静态网站，非常适合用于技术文档、项目文档等场景。通过 GitHub Pages 作为网站服务器，对于诸如个人网站、博客以及教程网站的搭建非常方便。</p>
+<h2 id="_8">参考文章<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>：Material for MkDocs 官网教程。</li>
+<li><a href="https://www.mkdocs.org/getting-started/">MkDocs</a>：MkDocs 官网教程。</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        此页面是否有帮助？
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              感谢您的反馈意见！
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              感谢您的反馈意见！
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="上一页: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../blog/" class="md-footer__link md-footer__link--next" aria-label="下一页: Blog">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                Blog
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 ~ now | Bo Yin
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>我们使用 cookie 来识别您的重复访问和偏好，并衡量我们文档的有效性以及用户是否找到了他们正在搜索的内容。 经您同意，您正在帮助我们改进我们的文档。</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">同意</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">管理设定</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.instant", "navigation.tracking", "content.code.annotate", "content.action.edit", "toc.integrate", "toc.follow", "navigation.path", "navigation.top", "navigation.tabs", "navigation.prune", "navigation.footer", "navigation.expand", "content.code.copy", "navigation.indexes", "search.share", "search.suggest"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
