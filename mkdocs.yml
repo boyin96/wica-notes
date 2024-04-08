@@ -11,18 +11,75 @@ repo_url: https://github.com/boyin96/wica-notes/
 # Copyright
 copyright: Copyright &copy; 2024 ~ now | Bo Yin
 
+# Navigation
+nav:
+  - Home: index.md
+  - About: about.md
+  - Technial: x.md
+
 # Theme
 theme:
   name: material
   palette:
-    primary: indigo
-    accent: indigo
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
 
-  feature:
-    tabs: true
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - header.autohide  # 自动隐藏
+    - navigation.instant # 自动隐藏
+    - navigation.tracking # 地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
+    - content.code.annotate
+    - toc.integrate
+    - toc.follow
+    - navigation.path
+    - navigation.top # 返回顶部的按钮 在上滑时出现
+    - navigation.tabs
+    - navigation.prune
+    - navigation.footer
+    - navigation.tabs.sticky  # 启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
+    - navigation.sections # 启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    - navigation.expand # 打开Tab时左侧目录全部展开
+    - content.code.copy
+    - navigation.indexes # 启用节索引页后，可以将文档直接附加到节
+    - search.share # 搜索分享按钮
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    - search.highlight # 搜索出的文章关键词加入高亮
+
+  icon: 
+    repo: fontawesome/brands/github
 
   font:
     text: Roboto
     code: Roboto Mono
 
   language: en
+
+plugins:
+  - search
+  - tags
+
+extra:
+  generator: false  # 删除页脚显示“使用 MkDocs 材料制造”
+
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
