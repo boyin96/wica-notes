@@ -18,8 +18,7 @@ nav:
     - 信号: wica/x.md
     - 下面: wica/y.md
   - Technology:
-    - Material for MkDocs: technology/x.md
-    - Material for MkDocs: technology/x.md
+    - Material for MkDocs: technology/mkdocs.md
   - Blog:
     - blog/index.md
 

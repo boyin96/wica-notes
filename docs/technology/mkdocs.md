@@ -1,11 +1,10 @@
 ---
-title: Material for MkDocs
+title: Material for MkDocs 搭建网页教程
 tags:
   - Web
 author: Bo Yin
 ---
 
-# MkDocs Material 极简教程
 
 本网站使用 MkDocs Material 构建。
 
