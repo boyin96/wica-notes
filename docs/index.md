@@ -1,6 +1,7 @@
 ---
 hide:
   - feedback
+author: Bo Yin
 ---
 
 # 欢迎来到 WiCa Notes
