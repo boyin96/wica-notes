@@ -1,9 +1,10 @@
 ---
-title: Material for MkDocs
 tags:
   - Web
 author: Bo Yin
 ---
+
+# Material for MkDocs 简介
 
 本文简单介绍如何使用 [MkDocs](https://www.mkdocs.org/) 以及 [GitHub Pages](https://pages.github.com/) 构建个人网站，并搭配 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 主题。
 

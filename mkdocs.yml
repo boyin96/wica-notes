@@ -14,8 +14,15 @@ copyright: Copyright &copy; 2024 ~ now | Bo Yin
 # Navigation
 nav:
   - Home: index.md
-  - WiCa: 
-    - x: x.md
+  - WiCa:
+    - Background:
+        - wica/background/index.md
+        - Linear Algebra: wica/background/x.md
+        - Random Variables: wica/background/x.md
+        - Baseband Model: wica/background/x.md
+        - Information Theory: wica/background/x.md
+        - Estimation Theory: wica/background/x.md
+        - Channel Capacity: wica/background/x.md
   - Technology:
     - Material for MkDocs: technology/mkdocs.md
   - Programming: 
@@ -46,31 +53,39 @@ theme:
         name: Switch to light mode
 
   features:
+    - announce.dismiss
+
     - header.autohide  # 自动隐藏
+
     - navigation.instant # 自动隐藏
     - navigation.tracking # 地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
-    - content.code.annotate
-    - content.action.edit
-    - toc.integrate
-    - toc.follow
     - navigation.path
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - navigation.tabs
     - navigation.prune
     - navigation.footer # 页脚可以包含指向当前页面的上一页和下一页的链接
-    - navigation.expand # 打开Tab时左侧目录全部展开
-    - content.code.copy
+    # - navigation.expand # 打开Tab时左侧目录全部展开
     - navigation.indexes # 启用节索引页后，可以将文档直接附加到节
+    # - navigation.sections # 启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+
+    - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - content.code.copy # 代码块出现复制按钮
+    - content.tooltips
+
+    - toc.follow # 当启用目录的锚点跟随时，侧边栏会自动滚动，以便活动锚点始终可见
+
     - search.share # 搜索分享按钮
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
-    # - search.highlight # 搜索出的文章关键词加入高亮
+    - search.highlight # 搜索出的文章关键词加入高亮
     # - navigation.tabs.sticky # 启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
-    # - navigation.sections # 启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    # - toc.integrate # 启用目录的导航集成后，它始终呈现为左侧导航侧边栏的一部分
 
   icon: 
     repo: fontawesome/brands/github
-    edit: material/pencil 
-    view: material/eye
+    edit: material/file-edit-outline 
+    view: material/file-eye-outline
 
   font:
     text: Roboto
@@ -134,6 +149,9 @@ extra:
             感谢您的反馈意见！
 
 markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.arithmatex: # latex支持
       generic: true
   - admonition # admonition

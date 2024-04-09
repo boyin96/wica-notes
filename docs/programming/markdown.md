@@ -1,10 +1,11 @@
 ---
-title: Markdown Basic Syntax
 tags:
   - Programming Language
   - Markdown
 author: Bo Yin
 ---
+
+# Markdown 语法简介
 
 本文简单介绍并记录了常见的 [Markdown](https://www.markdownguide.org/basic-syntax/) 基础语法，并对 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 中的 Python Markdown 以及 Python Markdown Extensions 作简单拓展。
 
