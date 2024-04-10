@@ -131,3 +131,4 @@ author: Bo Yin
     $$
     \mathbf{A}=\sum_{m=1}^M d_m \mathbf{u}_m \mathbf{u}_m^H
     $$
+1
