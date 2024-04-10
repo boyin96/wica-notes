@@ -61,7 +61,7 @@ author: Bo Yin
     取等号时，$\mathbf{x}=c \mathbf{y}$ 成立
 
     $$
-    \mathbf{x}^H c\mathbf{x}=\sum_{m=1}^M cx_m^* x_m=c\|\mathbf{x}\|^2
+    \mathbf{x}^H c\mathbf{x}=c\sum_{m=1}^M x_m^* x_m=c\|\mathbf{x}\|^2
     $$
 
 ## 矩阵
@@ -85,10 +85,6 @@ author: Bo Yin
     $$
 
     则 $\mathbf{u}$ 为 $\mathbf{A}$ 特征值 $\lambda$ 对应的特征向量。
-
-    !!! note
-        
-        矩阵的秩等于其线性独立的列的个数
 
 3. 矩阵的特征值分解
 
