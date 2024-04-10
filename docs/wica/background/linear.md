@@ -61,7 +61,7 @@ author: Bo Yin
     取等号时，$\mathbf{x}=c \mathbf{y}$ 成立
 
     $$
-    \mathbf{x}^H \mathbf{x}=\sum_{m=1}^M x_m^* x_m=\|\mathbf{x}\|^2
+    \mathbf{x}^H c\mathbf{x}=\sum_{m=1}^M cx_m^* x_m=c\|\mathbf{x}\|^2
     $$
 
 ## 矩阵
